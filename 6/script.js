@@ -1,23 +1,37 @@
-// TODO: Set item in localStorage
+// Set item in localStorage
+localStorage.setItem('key', 'value');
 
-// TODO: Get item from localStorage
+// Get item from localStorage
+const value = localStorage.getItem('key');
 
-// TODO: Remove item from localStorage
+// Remove item from localStorage
+localStorage.removeItem('key');
 
-// TODO: Clear all items from localStorage
+// Clear all items from localStorage
+localStorage.clear();
 
-// TODO: Add an object to localStorage
+// Add an object to localStorage
+const obj = { name: 'John', age: 30 };
+localStorage.setItem('user', JSON.stringify(obj));
 
-// TODO: Get an object from localStorage
+// Get an object from localStorage
+const user = JSON.parse(localStorage.getItem('user'));
 
-// TODO: Set item in sessionStorage
+// Set item in sessionStorage
+sessionStorage.setItem('key', 'value');
 
-// TODO: Get item from sessionStorage
+// Get item from sessionStorage
+const sessionValue = sessionStorage.getItem('key');
 
-// TODO: Remove item from sessionStorage
+// Remove item from sessionStorage
+sessionStorage.removeItem('key');
 
-// TODO: Clear all items from sessionStorage
+// Clear all items from sessionStorage
+sessionStorage.clear();
 
-// TODO: Add an object to sessionStorage
+// Add an object to sessionStorage
+const sessionObj = { name: 'Jane', age: 25 };
+sessionStorage.setItem('sessionUser', JSON.stringify(sessionObj));
 
-// TODO: Get an object from sessionStorage
+// Get an object from sessionStorage
+const sessionUser = JSON.parse(sessionStorage.getItem('sessionUser'));
